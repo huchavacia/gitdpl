@@ -1,3 +1,21 @@
+# Mi página web
+
+## Descripción
+Página web realizada a partir de una plantilla HTML,
+CSS y JavaScript.
+
+## Tecnologías
+- HTML
+- CSS
+- JavaScript
+
+## Autor
+Nombre y apellidos del alumno.
+
+## Plantilla utilizada
+Ver de aquí en adelante
+
+
 # Lernwick — Online Course & Education HTML Template
 
 Free, static e-learning template from [html.design](https://html.design/).

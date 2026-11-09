@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Contact — Lernwick</title>
+<meta name="description" content="Contact form, campus details and FAQ — Lernwick free education HTML template." />
+<meta name="theme-color" content="#F7941D" />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='9' fill='%23F7941D'/%3E%3Cpath d='M8 10.5c3-1.4 5.7-1.2 8 .6 2.3-1.8 5-2 8-.6v12c-3-1.4-5.7-1.2-8 .6-2.3-1.8-5-2-8-.6Z' fill='none' stroke='%231B1B1F' stroke-width='2.2' stroke-linejoin='round'/%3E%3Cpath d='M16 11.1v12' stroke='%231B1B1F' stroke-width='2.2'/%3E%3C/svg%3E" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Mulish:wght@400;500;600;700&family=Caveat:wght@500;700&display=swap" rel="stylesheet" />
+<link rel="preconnect" href="https://images.pexels.com" crossorigin />
+
+<link rel="stylesheet" href="assets/css/tokens.css" />
+<link rel="stylesheet" href="assets/css/site.css" />
+<link rel="stylesheet" href="assets/css/pages.css" />
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="header">
+  <div class="container header__inner">
+    <a class="brand" href="index.html" aria-label="Lernwick — home">
+      <svg class="brand__mark" viewBox="0 0 32 32" aria-hidden="true">
+        <path d="M4 8.5c4-1.9 7.8-1.6 12 .9 4.2-2.5 8-2.8 12-.9v16c-4-1.9-7.8-1.6-12 .9-4.2-2.5-8-2.8-12-.9Z" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round" />
+        <path d="M16 9.4v16" stroke="currentColor" stroke-width="2.4" />
+        <circle cx="25" cy="6" r="3.2" fill="var(--sage)" />
+      </svg>
+      <span class="brand__word">Lernwick</span>
+    </a>
+
+    <nav class="nav" id="site-nav" aria-label="Main">
+      <a href="index.html">Home</a>
+      <a href="courses.html">Courses</a>
+      <a href="pricing.html">Pricing</a>
+      <a href="about.html">About</a>
+      <a href="contact.html" aria-current="page">Contact</a>
+      <a class="nav__cta" href="courses.html">Join our course</a>
+    </nav>
+
+    <div class="header__tools">
+      <a class="header__search" href="courses.html#search">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+        <span>Search</span>
+      </a>
+      <a class="btn btn--outline header__cta" href="courses.html">Join our course</a>
+      <button class="burger" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+<section class="phead" aria-labelledby="pg-title">
+  <div class="container">
+    <svg class="burst" viewBox="0 0 100 100" aria-hidden="true"><path d="M50 4v92M4 50h92M17 17l66 66M83 17 17 83M30 8l40 84M8 30l84 40M70 8 30 92M92 30 8 70" /></svg>
+    <div class="phead__inner">
+      <ol class="crumbs"><li><a href="index.html">Home</a></li><li aria-current="page">Contact</li></ol>
+      <h1 id="pg-title">Say <span class="hl">h</span>ello <svg class="squiggle" viewBox="0 0 120 48" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 34c18 4 34-2 38-12 3-8-7-12-11-5-5 9 8 17 24 16 20-1 36-12 52-22"/><path d="M100 6l15 5-9 13"/></svg></h1>
+      <p class="lede">Questions about a course, a team plan or becoming a mentor? Send a note and a real person will reply within one working day.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section section--tight" aria-labelledby="form-title">
+  <div class="container contact">
+    <form class="cform" data-contact novalidate>
+      <h2 id="form-title" class="cform__h">Send a message</h2>
+      <div class="cform__row">
+        <div class="field">
+          <label for="c-name">Your name</label>
+          <input class="input" id="c-name" name="name" autocomplete="name" required />
+          <p class="field__err" data-err></p>
+        </div>
+        <div class="field">
+          <label for="c-email">Email</label>
+          <input class="input" id="c-email" name="email" type="email" autocomplete="email" required />
+          <p class="field__err" data-err></p>
+        </div>
+      </div>
+      <fieldset class="field">
+        <legend class="label">I’m asking about</legend>
+        <div class="chips" data-topic>
+          <button class="chip" type="button" aria-pressed="true" data-topic-v="A course">A course</button>
+          <button class="chip" type="button" aria-pressed="false" data-topic-v="Team plan">Team plan</button>
+          <button class="chip" type="button" aria-pressed="false" data-topic-v="Becoming a mentor">Becoming a mentor</button>
+          <button class="chip" type="button" aria-pressed="false" data-topic-v="Something else">Something else</button>
+        </div>
+        <input type="hidden" name="topic" value="A course" />
+      </fieldset>
+      <div class="field">
+        <label for="c-msg">Message</label>
+        <textarea class="textarea" id="c-msg" name="message" required minlength="10"></textarea>
+        <p class="field__err" data-err></p>
+      </div>
+      <button class="btn btn--orange" type="submit">Send message <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+      <p class="form-note" role="status" aria-live="polite"></p>
+    </form>
+
+    <aside class="info" aria-label="Other ways to reach us">
+      <div class="info__card info__card--peach">
+        <p class="note">Visit the studio</p>
+        <address>18 Canal Street, Unit&nbsp;4<br />Manchester M1 3HE, UK</address>
+        <p class="info__small">Open Monday to Friday, 9:00–17:30. Tea is always on.</p>
+      </div>
+      <div class="info__card info__card--sage">
+        <p class="note">Write or call</p>
+        <p><a href="mailto:hello@example.com">hello@example.com</a><br /><a href="tel:+441610000000">+44 161 000 0000</a></p>
+        <p class="info__small">Average reply time: 5 hours.</p>
+      </div>
+      <div class="info__card info__card--ink">
+        <p class="info__big">Teams of 10+?</p>
+        <p class="info__small">Ask about private cohorts and invoice billing.</p>
+        <a class="btn btn--orange btn--sm" href="pricing.html">See team plan <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </div>
+    </aside>
+  </div>
+</section>
+
+<section class="section section--soft" aria-labelledby="faq-title">
+  <div class="container faq">
+    <div class="shead">
+      <p class="note">Before you write</p>
+      <h2 id="faq-title">Quick answers</h2>
+    </div>
+    <div class="acc" data-acc>
+      <div class="acc__item">
+        <h3><button class="acc__btn" type="button" aria-expanded="false" aria-controls="f1" id="f1-b">I can’t find my certificate.</button></h3>
+        <div class="acc__panel" id="f1" role="region" aria-labelledby="f1-b" hidden><p>Certificates appear under Profile → Achievements once your final project is approved, usually within two working days of submitting it.</p></div>
+      </div>
+      <div class="acc__item">
+        <h3><button class="acc__btn" type="button" aria-expanded="false" aria-controls="f2" id="f2-b">Can I switch to a different course?</button></h3>
+        <div class="acc__panel" id="f2" role="region" aria-labelledby="f2-b" hidden><p>Yes, within 30 days of buying. Reply to your receipt and tell us which course you’d prefer; we’ll swap it over.</p></div>
+      </div>
+      <div class="acc__item">
+        <h3><button class="acc__btn" type="button" aria-expanded="false" aria-controls="f3" id="f3-b">How do I become a mentor?</button></h3>
+        <div class="acc__panel" id="f3" role="region" aria-labelledby="f3-b" hidden><p>Choose “Becoming a mentor” above and tell us what you teach. We look for at least five years of hands-on work and a real enjoyment of explaining things.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer__cta">
+      <p class="footer__big">Learn something new<br /> <span class="footer__hl">this week.</span></p>
+      <form class="subscribe" data-demo-form novalidate>
+        <label class="footer__label" for="sub-email">Get one free lesson every Friday</label>
+        <div class="subscribe__row">
+          <input id="sub-email" type="email" name="email" placeholder="you@example.com" autocomplete="email" required />
+          <button class="btn btn--orange" type="submit">Subscribe</button>
+        </div>
+        <p class="form-note" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+
+    <div class="footer__grid">
+      <div class="footer__about">
+        <a class="brand brand--light" href="index.html" aria-label="Lernwick — home">
+          <svg class="brand__mark" viewBox="0 0 32 32" aria-hidden="true">
+            <path d="M4 8.5c4-1.9 7.8-1.6 12 .9 4.2-2.5 8-2.8 12-.9v16c-4-1.9-7.8-1.6-12 .9-4.2-2.5-8-2.8-12-.9Z" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round" />
+            <path d="M16 9.4v16" stroke="currentColor" stroke-width="2.4" />
+            <circle cx="25" cy="6" r="3.2" fill="var(--sage)" />
+          </svg>
+          <span class="brand__word">Lernwick</span>
+        </a>
+        <p>Short, practical online courses taught by people who do the work every day.</p>
+      </div>
+      <div>
+        <p class="footer__h">Learn</p>
+        <ul>
+          <li><a href="courses.html">All courses</a></li>
+          <li><a href="course.html">Course detail</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
+          <li><a href="index.html#how">How it works</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="footer__h">School</p>
+        <ul>
+          <li><a href="about.html">About us</a></li>
+          <li><a href="about.html#mentors">Mentors</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="404.html">404 page</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="footer__h">Say hello</p>
+        <address>
+          18 Canal Street, Unit&nbsp;4<br />Manchester M1 3HE<br />
+          <a href="mailto:hello@example.com">hello@example.com</a><br />
+          <a href="tel:+441610000000">+44 161 000 0000</a>
+        </address>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <p>&copy; <span data-year>2026</span> Lernwick. Free template by <a href="https://html.design/">html.design</a>.</p>
+      <p>Photography via <a href="https://www.pexels.com/">Pexels</a></p>
+    </div>
+  </div>
+</footer>
+
+<div class="toast" role="status" aria-live="polite" hidden></div>
+<script src="assets/js/main.js" defer></script>
+</body>
+</html>

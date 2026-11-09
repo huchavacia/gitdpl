@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Lernwick — Online Courses & E-learning</title>
+<meta name="description" content="Lernwick is a free education HTML template for online course platforms — playful hero with floating course cards, filterable course catalogue, course detail with curriculum, pricing, about and contact pages." />
+<meta name="theme-color" content="#F7941D" />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='9' fill='%23F7941D'/%3E%3Cpath d='M8 10.5c3-1.4 5.7-1.2 8 .6 2.3-1.8 5-2 8-.6v12c-3-1.4-5.7-1.2-8 .6-2.3-1.8-5-2-8-.6Z' fill='none' stroke='%231B1B1F' stroke-width='2.2' stroke-linejoin='round'/%3E%3Cpath d='M16 11.1v12' stroke='%231B1B1F' stroke-width='2.2'/%3E%3C/svg%3E" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Mulish:wght@400;500;600;700&family=Caveat:wght@500;700&display=swap" rel="stylesheet" />
+<link rel="preconnect" href="https://images.pexels.com" crossorigin />
+
+<link rel="stylesheet" href="assets/css/tokens.css" />
+<link rel="stylesheet" href="assets/css/site.css" />
+<link rel="stylesheet" href="assets/css/pages.css" />
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="header">
+  <div class="container header__inner">
+    <a class="brand" href="index.html" aria-label="Lernwick — home">
+      <svg class="brand__mark" viewBox="0 0 32 32" aria-hidden="true">
+        <path d="M4 8.5c4-1.9 7.8-1.6 12 .9 4.2-2.5 8-2.8 12-.9v16c-4-1.9-7.8-1.6-12 .9-4.2-2.5-8-2.8-12-.9Z" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round" />
+        <path d="M16 9.4v16" stroke="currentColor" stroke-width="2.4" />
+        <circle cx="25" cy="6" r="3.2" fill="var(--sage)" />
+      </svg>
+      <span class="brand__word">Lernwick</span>
+    </a>
+
+    <nav class="nav" id="site-nav" aria-label="Main">
+      <a href="index.html" aria-current="page">Home</a>
+      <a href="courses.html">Courses</a>
+      <a href="pricing.html">Pricing</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a class="nav__cta" href="courses.html">Join our course</a>
+    </nav>
+
+    <div class="header__tools">
+      <a class="header__search" href="courses.html#search">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+        <span>Search</span>
+      </a>
+      <a class="btn btn--outline header__cta" href="courses.html">Join our course</a>
+      <button class="burger" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+<!-- ============ HERO: headline left, blob portrait with sticker cards right ============ -->
+<section class="hero" aria-labelledby="hero-title">
+  <div class="container hero__grid">
+    <div class="hero__copy">
+      <span class="vlabel" aria-hidden="true">Development</span>
+      <p class="note">120+ courses, one calm place to learn</p>
+      <h1 id="hero-title">Best digital <svg class="squiggle" viewBox="0 0 120 48" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 34c18 4 34-2 38-12 3-8-7-12-11-5-5 9 8 17 24 16 20-1 36-12 52-22"/><path d="M100 6l15 5-9 13"/></svg><br /><span class="hl">O</span>nline courses</h1>
+      <p class="hero__lede">Short, practical courses taught by working designers, developers and makers. Learn at your own pace, with a mentor one message away.</p>
+      <div class="hero__ctas">
+        <a class="btn btn--orange" href="courses.html">Get started <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        <a class="hero__how" href="#how"><span class="hero__play" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="m10 9 5 3-5 3Z"/></svg></span>How it works</a>
+      </div>
+    </div>
+
+    <div class="hero__media">
+      <svg class="burst hero__burst" viewBox="0 0 100 100" aria-hidden="true">
+        <path d="M50 4v92M4 50h92M17 17l66 66M83 17 17 83M30 8l40 84M8 30l84 40M70 8 30 92M92 30 8 70" />
+      </svg>
+      <figure class="blob">
+        <img src="https://images.pexels.com/photos/3769021/pexels-photo-3769021.jpeg?auto=compress&cs=tinysrgb&w=900&h=1000&fit=crop" alt="Smiling student with curly hair resting her chin on her hand beside a laptop" width="900" height="1000" fetchpriority="high" decoding="async" sizes="(max-width: 900px) 90vw, 44vw" />
+      </figure>
+      <span class="badge" aria-hidden="true">
+        <svg viewBox="0 0 24 24"><rect x="9" y="3" width="7" height="7" rx="1" transform="rotate(45 12.5 6.5)" fill="#fff" /><rect x="8" y="12" width="7" height="7" rx="1" fill="var(--orange)" /></svg>
+        UI / UX
+      </span>
+      <div class="fcard" aria-hidden="true">
+        <p class="fcard__t">Visual Sketching for Designers</p>
+        <p class="fcard__by"><img src="https://images.pexels.com/photos/1181742/pexels-photo-1181742.jpeg?auto=compress&cs=tinysrgb&w=96&h=96&fit=crop" alt="" width="96" height="96" decoding="async" /><span><strong>Karen Osei</strong><small><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="m10 9 5 3-5 3Z"/></svg>12 courses</small></span></p>
+      </div>
+      <div class="fchip" aria-hidden="true">
+        <img src="https://images.pexels.com/photos/7752846/pexels-photo-7752846.jpeg?auto=compress&cs=tinysrgb&w=96&h=96&fit=crop" alt="" width="96" height="96" decoding="async" />
+        <span><strong>Rahul</strong><small>Full-stack engineer</small></span>
+        <em>$60/h</em>
+      </div>
+      <span class="vscroll" aria-hidden="true">Scroll</span>
+    </div>
+  </div>
+
+  <div class="container hero__row">
+    <div class="collage" aria-hidden="true">
+      <img src="https://images.pexels.com/photos/8199759/pexels-photo-8199759.jpeg?auto=compress&cs=tinysrgb&w=500&h=560&fit=crop" alt="" width="500" height="560" decoding="async" />
+      <img src="https://images.pexels.com/photos/7972949/pexels-photo-7972949.jpeg?auto=compress&cs=tinysrgb&w=500&h=360&fit=crop" alt="" width="500" height="360" decoding="async" />
+      <img src="https://images.pexels.com/photos/16420473/pexels-photo-16420473.jpeg?auto=compress&cs=tinysrgb&w=500&h=360&fit=crop" alt="" width="500" height="360" decoding="async" />
+    </div>
+    <a class="process" href="#how">
+      <span class="process__ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="m10 9 5 3-5 3Z"/></svg></span>
+      <span class="pill">Online</span>
+      <span class="process__t">The learning process is simple</span>
+      <span class="process__go" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+    </a>
+    <div class="stats">
+      <dl class="stats__list">
+        <div><dt>Courses &amp; subjects</dt><dd>231<sup>+</sup></dd></div>
+        <div><dt>Instructors</dt><dd>319<sup>+</sup></dd></div>
+        <div><dt>Using the app</dt><dd>72k<sup>+</sup></dd></div>
+      </dl>
+      <p class="happy"><span class="avatars"><img src="https://images.pexels.com/photos/1181742/pexels-photo-1181742.jpeg?auto=compress&cs=tinysrgb&w=96&h=96&fit=crop" alt="" width="96" height="96" loading="lazy" decoding="async" sizes="2.5rem" /><img src="https://images.pexels.com/photos/7752846/pexels-photo-7752846.jpeg?auto=compress&cs=tinysrgb&w=96&h=96&fit=crop" alt="" width="96" height="96" loading="lazy" decoding="async" sizes="2.5rem" /><img src="https://images.pexels.com/photos/7516387/pexels-photo-7516387.jpeg?auto=compress&cs=tinysrgb&w=96&h=96&fit=crop" alt="" width="96" height="96" loading="lazy" decoding="async" sizes="2.5rem" /><img src="https://images.pexels.com/photos/27268204/pexels-photo-27268204.jpeg?auto=compress&cs=tinysrgb&w=96&h=96&fit=crop" alt="" width="96" height="96" loading="lazy" decoding="async" sizes="2.5rem" /></span><span><strong>+72k</strong> happy students</span></p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ POPULAR COURSES ============ -->
+<section class="section" id="popular" aria-labelledby="pop-title">
+  <div class="container">
+    <div class="shead__row">
+      <div class="shead">
+        <p class="note">Handpicked this month</p>
+        <h2 id="pop-title">Most popular <span class="underline">courses</span> <svg class="squiggle" viewBox="0 0 120 48" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 34c18 4 34-2 38-12 3-8-7-12-11-5-5 9 8 17 24 16 20-1 36-12 52-22"/><path d="M100 6l15 5-9 13"/></svg></h2>
+      </div>
+      <div class="tabs" role="tablist" aria-label="Course category">
+        <button role="tab" id="ct-all" aria-selected="true" aria-controls="pop-grid" data-cat="all">All</button>
+        <button role="tab" id="ct-design" aria-selected="false" aria-controls="pop-grid" data-cat="design" tabindex="-1">Design</button>
+        <button role="tab" id="ct-dev" aria-selected="false" aria-controls="pop-grid" data-cat="development" tabindex="-1">Development</button>
+        <button role="tab" id="ct-biz" aria-selected="false" aria-controls="pop-grid" data-cat="business" tabindex="-1">Business</button>
+        <button role="tab" id="ct-creative" aria-selected="false" aria-controls="pop-grid" data-cat="creative" tabindex="-1">Creative</button>
+      </div>
+    </div>
+    <div class="cgrid" id="pop-grid" role="tabpanel" aria-labelledby="ct-all" data-pop-grid>
+        <article class="ccard ccard--peach" data-cat="design" data-level="beginner" data-price="49" data-rating="4.9" data-students="3120" data-title="Visual Sketching for Designers">
+          <div class="ccard__media">
+            <img src="https://images.pexels.com/photos/6615235/pexels-photo-6615235.jpeg?auto=compress&cs=tinysrgb&w=720&h=480&fit=crop" alt="Architectural sketches, a tablet and drawing tools spread on a desk" width="720" height="480" loading="lazy" decoding="async" sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw" />
+            <span class="ccard__cat">Design</span>
+          </div>
+          <div class="ccard__body">
+            <p class="ccard__meta"><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="m10 9 5 3-5 3Z"/></svg>24 lessons</span><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>8h</span><span>Beginner</span></p>
+            <h3 class="ccard__title"><a href="course.html">Visual Sketching for Designers</a></h3>
+            <p class="ccard__by"><img src="https://images.pexels.com/photos/1181742/pexels-photo-1181742.jpeg?auto=compress&cs=tinysrgb&w=96&h=96&fit=crop" alt="" width="96" height="96" loading="lazy" decoding="async" sizes="2rem" />Karen Osei</p>
+            <p class="ccard__foot">
+              <span class="ccard__rating"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="m12 3 2.7 5.6 6.1.9-4.4 4.3 1 6.1L12 17l-5.4 2.9 1-6.1L3.2 9.5l6.1-.9Z"/></svg>4.9 <small>(412)</small></span>
+              <span class="ccard__price">$49</span>
+            </p>
+          </div>
+        </article>
+        <article class="ccard ccard--sage" data-cat="development" data-level="beginner" data-price="89" data-rating="4.8" data-students="11840" data-title="Web Development Bootcamp">
+          <div class="ccard__media">
+            <img src="https://images.pexels.com/photos/574071/pexels-photo-574071.jpeg?auto=compress&cs=tinysrgb&w=720&h=480&fit=crop" alt="Hands typing on a laptop showing code in an editor" width="720" height="480" loading="lazy" decoding="async" sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw" />
+            <span class="ccard__cat">Development</span>
+          </div>
+          <div class="ccard__body">
+            <p class="ccard__meta"><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="m10 9 5 3-5 3Z"/></svg>86 lessons</span><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>42h</span><span>Beginner</span></p>
+            <h3 class="ccard__title"><a href="course.html">Web Development Bootcamp</a></h3>
+            <p class="ccard__by"><img src="https://images.pexels.com/photos/7752846/pexels-photo-7752846.jpeg?auto=compress&cs=tinysrgb&w=96&h=96&fit=crop" alt="" width="96" height="96" loading="lazy" decoding="async" sizes="2rem" />Rahul Mehta</p>
+            <p class="ccard__foot">
+              <span class="ccard__rating"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="m12 3 2.7 5.6 6.1.9-4.4 4.3 1 6.1L12 17l-5.4 2.9 1-6.1L3.2 9.5l6.1-.9Z"/></svg>4.8 <small>(1.3k)</small></span>
+              <span class="ccard__price">$89</span>
+            </p>
+          </div>
+        </article>
+        <article class="ccard ccard--peach" data-cat="development" data-level="intermediate" data-price="69" data-rating="4.8" data-students="6205" data-title="Python for Data Analysis">
+          <div class="ccard__media">
+            <img src="https://images.pexels.com/photos/7988086/pexels-photo-7988086.jpeg?auto=compress&cs=tinysrgb&w=720&h=480&fit=crop" alt="Programmer at a desk with code on a laptop and a large monitor" width="720" height="480" loading="lazy" decoding="async" sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw" />
+            <span class="ccard__cat">Development</span>
+          </div>
+          <div class="ccard__body">
+            <p class="ccard__meta"><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="m10 9 5 3-5 3Z"/></svg>48 lessons</span><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>21h</span><span>Intermediate</span></p>
+            <h3 class="ccard__title"><a href="course.html">Python for Data Analysis</a></h3>
+            <p class="ccard__by"><img src="https://images.pexels.com/photos/7752846/pexels-photo-7752846.jpeg?auto=compress&cs=tinysrgb&w=96&h=96&fit=crop" alt="" width="96" height="96" loading="lazy" decoding="async" sizes="2rem" />Rahul Mehta</p>
+            <p class="ccard__foot">
+              <span class="ccard__rating"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="m12 3 2.7 5.6 6.1.9-4.4 4.3 1 6.1L12 17l-5.4 2.9 1-6.1L3.2 9.5l6.1-.9Z"/></svg>4.8 <small>(688)</small></span>
+              <span class="ccard__price">$69</span>
+            </p>
+          </div>
+        </article>
+        <article class="ccard ccard--sage" data-cat="business" data-level="intermediate" data-price="59" data-rating="4.7" data-students="2980" data-title="Marketing Strategy Workshop">
+          <div class="ccard__media">
+            <img src="https://images.pexels.com/photos/7710077/pexels-photo-7710077.jpeg?auto=compress&cs=tinysrgb&w=720&h=480&fit=crop" alt="Two colleagues planning in front of a flip chart covered in sticky notes" width="720" height="480" loading="lazy" decoding="async" sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw" />
+            <span class="ccard__cat">Business</span>
+          </div>
+          <div class="ccard__body">
+            <p class="ccard__meta"><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="m10 9 5 3-5 3Z"/></svg>32 lessons</span><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>12h</span><span>Intermediate</span></p>
+            <h3 class="ccard__title"><a href="course.html">Marketing Strategy Workshop</a></h3>
+            <p class="ccard__by"><img src="https://images.pexels.com/photos/7516387/pexels-photo-7516387.jpeg?auto=compress&cs=tinysrgb&w=96&h=96&fit=crop" alt="" width="96" height="96" loading="lazy" decoding="async" sizes="2rem" />Elena Brooks</p>
+            <p class="ccard__foot">
+              <span class="ccard__rating"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="m12 3 2.7 5.6 6.1.9-4.4 4.3 1 6.1L12 17l-5.4 2.9 1-6.1L3.2 9.5l6.1-.9Z"/></svg>4.7 <small>(356)</small></span>
+              <span class="ccard__price">$59</span>
+            </p>
+          </div>
+        </article>
+        <article class="ccard ccard--peach" data-cat="creative" data-level="beginner" data-price="39" data-rating="4.9" data-students="4410" data-title="Photography: Mastering Light">
+          <div class="ccard__media">
+            <img src="https://images.pexels.com/photos/759960/pexels-photo-759960.jpeg?auto=compress&cs=tinysrgb&w=720&h=480&fit=crop" alt="Hand holding a camera lens up to a misty autumn park" width="720" height="480" loading="lazy" decoding="async" sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw" />
+            <span class="ccard__cat">Creative</span>
+          </div>
+          <div class="ccard__body">
+            <p class="ccard__meta"><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="m10 9 5 3-5 3Z"/></svg>28 lessons</span><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>10h</span><span>Beginner</span></p>
+            <h3 class="ccard__title"><a href="course.html">Photography: Mastering Light</a></h3>
+            <p class="ccard__by"><img src="https://images.pexels.com/photos/27268204/pexels-photo-27268204.jpeg?auto=compress&cs=tinysrgb&w=96&h=96&fit=crop" alt="" width="96" height="96" loading="lazy" decoding="async" sizes="2rem" />Tunde Adeyemi</p>
+            <p class="ccard__foot">
+              <span class="ccard__rating"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="m12 3 2.7 5.6 6.1.9-4.4 4.3 1 6.1L12 17l-5.4 2.9 1-6.1L3.2 9.5l6.1-.9Z"/></svg>4.9 <small>(521)</small></span>
+              <span class="ccard__price">$39</span>
+            </p>
+          </div>
+        </article>
+        <article class="ccard ccard--sage" data-cat="development" data-level="intermediate" data-price="79" data-rating="4.7" data-students="7730" data-title="Front-end with Modern JavaScript">
+          <div class="ccard__media">
+            <img src="https://images.pexels.com/photos/3862142/pexels-photo-3862142.jpeg?auto=compress&cs=tinysrgb&w=720&h=480&fit=crop" alt="Woman writing code on a laptop in a bright office" width="720" height="480" loading="lazy" decoding="async" sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw" />
+            <span class="ccard__cat">Development</span>
+          </div>
+          <div class="ccard__body">
+            <p class="ccard__meta"><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="m10 9 5 3-5 3Z"/></svg>64 lessons</span><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>30h</span><span>Intermediate</span></p>
+            <h3 class="ccard__title"><a href="course.html">Front-end with Modern JavaScript</a></h3>
+            <p class="ccard__by"><img src="https://images.pexels.com/photos/7752846/pexels-photo-7752846.jpeg?auto=compress&cs=tinysrgb&w=96&h=96&fit=crop" alt="" width="96" height="96" loading="lazy" decoding="async" sizes="2rem" />Rahul Mehta</p>
+            <p class="ccard__foot">
+              <span class="ccard__rating"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="m12 3 2.7 5.6 6.1.9-4.4 4.3 1 6.1L12 17l-5.4 2.9 1-6.1L3.2 9.5l6.1-.9Z"/></svg>4.7 <small>(902)</small></span>
+              <span class="ccard__price">$79</span>
+            </p>
+          </div>
+        </article>
+    </div>
+    <p class="pop-foot"><a class="btn btn--outline" href="courses.html">Browse all 9 courses <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></p>
+  </div>
+</section>
+
+<!-- ============ HOW IT WORKS ============ -->
+<section class="section section--soft how" id="how" aria-labelledby="how-title">
+  <div class="container">
+    <div class="shead shead--center" data-reveal>
+      <p class="note">No timetable, no pressure</p>
+      <h2 id="how-title">How learning works here</h2>
+      <p>Four steps from curious to confident. Most students finish their first course in three weeks.</p>
+    </div>
+    <ol class="steps">
+      <li class="step step--peach" data-reveal>
+        <span class="step__n">1</span>
+        <h3>Pick a course</h3>
+        <p>Filter by topic, level and time. Every course has free preview lessons.</p>
+      </li>
+      <li class="step step--sage" data-reveal>
+        <span class="step__n">2</span>
+        <h3>Learn in short lessons</h3>
+        <p>Videos run 6–12 minutes, with a small project at the end of each module.</p>
+      </li>
+      <li class="step step--peach" data-reveal>
+        <span class="step__n">3</span>
+        <h3>Get mentor feedback</h3>
+        <p>Post your project and a mentor replies with notes within two working days.</p>
+      </li>
+      <li class="step step--sage" data-reveal>
+        <span class="step__n">4</span>
+        <h3>Earn your certificate</h3>
+        <p>Finish the final project to get a shareable certificate for your CV or LinkedIn.</p>
+      </li>
+    </ol>
+    <svg class="how__path" viewBox="0 0 1000 60" preserveAspectRatio="none" aria-hidden="true"><path d="M10 40C120 0 220 60 330 30s220-30 340 0 220 20 320-10" /></svg>
+  </div>
+</section>
+
+<!-- ============ WHO WE ARE ============ -->
+<section class="section who" aria-labelledby="who-title">
+  <div class="container who__grid">
+    <div class="who__media" data-reveal>
+      <img class="who__big" src="https://images.pexels.com/photos/8199770/pexels-photo-8199770.jpeg?auto=compress&cs=tinysrgb&w=800&h=900&fit=crop" alt="Two students at a library desk smiling at a laptop screen, notes spread beside them" width="800" height="900" loading="lazy" decoding="async" sizes="(max-width: 900px) 90vw, 40vw" />
+      <div class="who__sticker">
+        <p class="who__num">4.8<span>/5</span></p>
+        <p>Average course rating from 18,000 reviews</p>
+      </div>
+    </div>
+    <div class="who__copy">
+      <p class="note">Who we are</p>
+      <h2 id="who-title">A small school with <span class="underline">big-hearted</span> mentors</h2>
+      <p>Lernwick started as a weekend design class in a Manchester café. Today it is a team of 40 mentors teaching in 90 countries, and we still keep classes small enough that someone knows your name.</p>
+      <ul class="ticks">
+        <li><strong>Practical first.</strong> Every module ends with something you make, not a quiz.</li>
+        <li><strong>Real mentors.</strong> Working professionals, reviewed by students every term.</li>
+        <li><strong>Yours for life.</strong> Buy a course once and keep every future update.</li>
+      </ul>
+      <a class="btn btn--ink" href="about.html">Meet the team <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ LIVE MASTER CLASS ============ -->
+<section class="container master" aria-labelledby="mc-title" data-reveal>
+  <div class="master__card">
+    <div class="master__copy">
+      <p class="master__live"><span aria-hidden="true"></span>Live master class</p>
+      <h2 id="mc-title">Design your first app screen, live with Karen</h2>
+      <p>A free 90-minute session: sketch, wireframe and polish one screen together, with live Q&amp;A at the end.</p>
+      <dl class="master__facts">
+        <div><dt>When</dt><dd data-mc-date>Thursday, 6:00 pm</dd></div>
+        <div><dt>Where</dt><dd>Online, via your browser</dd></div>
+        <div><dt>Seats left</dt><dd><span data-mc-seats>38</span> of 200</dd></div>
+      </dl>
+      <div class="master__cd" aria-label="Time until the class starts" data-countdown>
+        <span><b data-cd="d">0</b><small>days</small></span>
+        <span><b data-cd="h">0</b><small>hours</small></span>
+        <span><b data-cd="m">0</b><small>mins</small></span>
+      </div>
+      <button class="btn btn--orange" type="button" data-save-seat>Save my free seat <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+    </div>
+    <figure class="master__media">
+      <img src="https://images.pexels.com/photos/1181742/pexels-photo-1181742.jpeg?auto=compress&cs=tinysrgb&w=640&h=640&fit=crop" alt="Portrait of mentor Karen Osei smiling at her laptop" width="640" height="640" loading="lazy" decoding="async" sizes="(max-width: 900px) 70vw, 30vw" />
+      <figcaption class="hand">Bring a pencil!</figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- ============ MENTORS ============ -->
+<section class="section" aria-labelledby="men-title">
+  <div class="container">
+    <div class="shead__row">
+      <div class="shead">
+        <p class="note">Learn from the best</p>
+        <h2 id="men-title">Meet your mentors</h2>
+      </div>
+      <a class="btn btn--outline" href="about.html#mentors">All mentors <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+    </div>
+    <ul class="mentors">
+        <li class="mentor mentor--sage">
+          <div class="mentor__photo">
+            <img src="https://images.pexels.com/photos/1181742/pexels-photo-1181742.jpeg?auto=compress&cs=tinysrgb&w=600&h=680&fit=crop" alt="Portrait of Karen Osei" width="600" height="680" loading="lazy" decoding="async" sizes="(max-width: 760px) 50vw, 25vw" />
+            <div class="mentor__chip">
+              <span><strong>Karen Osei</strong><small>UI/UX designer</small></span>
+              <em>$45/h</em>
+            </div>
+          </div>
+          <p class="mentor__bio">Designs product interfaces for fintech and health apps; has taught sketching to 9,000 students.</p>
+        </li>
+        <li class="mentor mentor--peach">
+          <div class="mentor__photo">
+            <img src="https://images.pexels.com/photos/7752846/pexels-photo-7752846.jpeg?auto=compress&cs=tinysrgb&w=600&h=680&fit=crop" alt="Portrait of Rahul Mehta" width="600" height="680" loading="lazy" decoding="async" sizes="(max-width: 760px) 50vw, 25vw" />
+            <div class="mentor__chip">
+              <span><strong>Rahul Mehta</strong><small>Full-stack engineer</small></span>
+              <em>$60/h</em>
+            </div>
+          </div>
+          <p class="mentor__bio">Ships web apps for a living and teaches the parts tutorials skip: debugging, testing and deploys.</p>
+        </li>
+        <li class="mentor mentor--sage">
+          <div class="mentor__photo">
+            <img src="https://images.pexels.com/photos/7516387/pexels-photo-7516387.jpeg?auto=compress&cs=tinysrgb&w=600&h=680&fit=crop" alt="Portrait of Elena Brooks" width="600" height="680" loading="lazy" decoding="async" sizes="(max-width: 760px) 50vw, 25vw" />
+            <div class="mentor__chip">
+              <span><strong>Elena Brooks</strong><small>Marketing lead</small></span>
+              <em>$50/h</em>
+            </div>
+          </div>
+          <p class="mentor__bio">Ran growth at two start-ups; now teaches strategy, audience building and teaching on camera.</p>
+        </li>
+        <li class="mentor mentor--peach">
+          <div class="mentor__photo">
+            <img src="https://images.pexels.com/photos/27268204/pexels-photo-27268204.jpeg?auto=compress&cs=tinysrgb&w=600&h=680&fit=crop" alt="Portrait of Tunde Adeyemi" width="600" height="680" loading="lazy" decoding="async" sizes="(max-width: 760px) 50vw, 25vw" />
+            <div class="mentor__chip">
+              <span><strong>Tunde Adeyemi</strong><small>Photographer & musician</small></span>
+              <em>$40/h</em>
+            </div>
+          </div>
+          <p class="mentor__bio">Shoots editorial portraits by day and plays session guitar by night; teaches both, patiently.</p>
+        </li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============ REVIEWS ============ -->
+<section class="section section--soft" aria-labelledby="rev-title">
+  <div class="container">
+    <div class="shead shead--center" data-reveal>
+      <p class="note">Kind words</p>
+      <h2 id="rev-title">Students say it better</h2>
+    </div>
+    <div class="quotes">
+      <figure class="quote quote--peach" data-reveal>
+        <span class="quote__mark" aria-hidden="true">“</span>
+        <blockquote>I finished the sketching course on my lunch breaks and got my first freelance client a month later.</blockquote>
+        <figcaption><img src="https://images.pexels.com/photos/5908493/pexels-photo-5908493.jpeg?auto=compress&cs=tinysrgb&w=160&h=160&fit=crop" alt="Portrait of Sophie Lindgren" width="160" height="160" loading="lazy" decoding="async" sizes="3rem" /><span><strong>Sophie Lindgren</strong><small>Junior product designer</small></span></figcaption>
+      </figure>
+      <figure class="quote quote--sage" data-reveal>
+        <span class="quote__mark" aria-hidden="true">“</span>
+        <blockquote>The mentor feedback is the real course. Rahul pointed out three bugs I would never have found myself.</blockquote>
+        <figcaption><img src="https://images.pexels.com/photos/36291553/pexels-photo-36291553.jpeg?auto=compress&cs=tinysrgb&w=160&h=160&fit=crop" alt="Portrait of Arjun Nair" width="160" height="160" loading="lazy" decoding="async" sizes="3rem" /><span><strong>Arjun Nair</strong><small>Web developer, Kochi</small></span></figcaption>
+      </figure>
+      <figure class="quote quote--peach" data-reveal>
+        <span class="quote__mark" aria-hidden="true">“</span>
+        <blockquote>Lessons are short enough to fit around two kids, and I never felt behind. Photography finally clicked.</blockquote>
+        <figcaption><img src="https://images.pexels.com/photos/20327630/pexels-photo-20327630.jpeg?auto=compress&cs=tinysrgb&w=160&h=160&fit=crop" alt="Portrait of Clara Moretti" width="160" height="160" loading="lazy" decoding="async" sizes="3rem" /><span><strong>Clara Moretti</strong><small>Hobby photographer</small></span></figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer__cta">
+      <p class="footer__big">Learn something new<br /> <span class="footer__hl">this week.</span></p>
+      <form class="subscribe" data-demo-form novalidate>
+        <label class="footer__label" for="sub-email">Get one free lesson every Friday</label>
+        <div class="subscribe__row">
+          <input id="sub-email" type="email" name="email" placeholder="you@example.com" autocomplete="email" required />
+          <button class="btn btn--orange" type="submit">Subscribe</button>
+        </div>
+        <p class="form-note" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+
+    <div class="footer__grid">
+      <div class="footer__about">
+        <a class="brand brand--light" href="index.html" aria-label="Lernwick — home">
+          <svg class="brand__mark" viewBox="0 0 32 32" aria-hidden="true">
+            <path d="M4 8.5c4-1.9 7.8-1.6 12 .9 4.2-2.5 8-2.8 12-.9v16c-4-1.9-7.8-1.6-12 .9-4.2-2.5-8-2.8-12-.9Z" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round" />
+            <path d="M16 9.4v16" stroke="currentColor" stroke-width="2.4" />
+            <circle cx="25" cy="6" r="3.2" fill="var(--sage)" />
+          </svg>
+          <span class="brand__word">Lernwick</span>
+        </a>
+        <p>Short, practical online courses taught by people who do the work every day.</p>
+      </div>
+      <div>
+        <p class="footer__h">Learn</p>
+        <ul>
+          <li><a href="courses.html">All courses</a></li>
+          <li><a href="course.html">Course detail</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
+          <li><a href="index.html#how">How it works</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="footer__h">School</p>
+        <ul>
+          <li><a href="about.html">About us</a></li>
+          <li><a href="about.html#mentors">Mentors</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="404.html">404 page</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="footer__h">Say hello</p>
+        <address>
+          18 Canal Street, Unit&nbsp;4<br />Manchester M1 3HE<br />
+          <a href="mailto:hello@example.com">hello@example.com</a><br />
+          <a href="tel:+441610000000">+44 161 000 0000</a>
+        </address>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <p>&copy; <span data-year>2026</span> Lernwick. Free template by <a href="https://html.design/">html.design</a>.</p>
+      <p>Photography via <a href="https://www.pexels.com/">Pexels</a></p>
+    </div>
+  </div>
+</footer>
+
+<div class="toast" role="status" aria-live="polite" hidden></div>
+<script src="assets/js/main.js" defer></script>
+</body>
+</html>

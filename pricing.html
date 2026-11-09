@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Pricing — Lernwick</title>
+<meta name="description" content="Monthly and yearly learning plans with FAQ — Lernwick free education HTML template." />
+<meta name="theme-color" content="#F7941D" />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='9' fill='%23F7941D'/%3E%3Cpath d='M8 10.5c3-1.4 5.7-1.2 8 .6 2.3-1.8 5-2 8-.6v12c-3-1.4-5.7-1.2-8 .6-2.3-1.8-5-2-8-.6Z' fill='none' stroke='%231B1B1F' stroke-width='2.2' stroke-linejoin='round'/%3E%3Cpath d='M16 11.1v12' stroke='%231B1B1F' stroke-width='2.2'/%3E%3C/svg%3E" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Mulish:wght@400;500;600;700&family=Caveat:wght@500;700&display=swap" rel="stylesheet" />
+<link rel="preconnect" href="https://images.pexels.com" crossorigin />
+
+<link rel="stylesheet" href="assets/css/tokens.css" />
+<link rel="stylesheet" href="assets/css/site.css" />
+<link rel="stylesheet" href="assets/css/pages.css" />
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="header">
+  <div class="container header__inner">
+    <a class="brand" href="index.html" aria-label="Lernwick — home">
+      <svg class="brand__mark" viewBox="0 0 32 32" aria-hidden="true">
+        <path d="M4 8.5c4-1.9 7.8-1.6 12 .9 4.2-2.5 8-2.8 12-.9v16c-4-1.9-7.8-1.6-12 .9-4.2-2.5-8-2.8-12-.9Z" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round" />
+        <path d="M16 9.4v16" stroke="currentColor" stroke-width="2.4" />
+        <circle cx="25" cy="6" r="3.2" fill="var(--sage)" />
+      </svg>
+      <span class="brand__word">Lernwick</span>
+    </a>
+
+    <nav class="nav" id="site-nav" aria-label="Main">
+      <a href="index.html">Home</a>
+      <a href="courses.html">Courses</a>
+      <a href="pricing.html" aria-current="page">Pricing</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a class="nav__cta" href="courses.html">Join our course</a>
+    </nav>
+
+    <div class="header__tools">
+      <a class="header__search" href="courses.html#search">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+        <span>Search</span>
+      </a>
+      <a class="btn btn--outline header__cta" href="courses.html">Join our course</a>
+      <button class="burger" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+<section class="phead phead--center" aria-labelledby="pg-title">
+  <div class="container">
+    <div class="phead__inner">
+      <ol class="crumbs"><li><a href="index.html">Home</a></li><li aria-current="page">Pricing</li></ol>
+      <h1 id="pg-title">Simple plans, <span class="hl">n</span>o surprises</h1>
+      <p class="lede">Start free, upgrade when you’re hooked. Cancel any time from your account page, no email needed.</p>
+      <div class="billing" role="group" aria-label="Billing period">
+        <button type="button" aria-pressed="true" data-billing="monthly">Monthly</button>
+        <button type="button" aria-pressed="false" data-billing="yearly">Yearly</button>
+        <span class="billing__save hand" aria-hidden="true">save 20% ↙</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section--tight" aria-label="Plans">
+  <div class="container plans">
+    <article class="plan">
+      <h2 class="plan__name">Starter</h2>
+      <p class="plan__for">Try the teaching style before you commit.</p>
+      <p class="plan__price"><span class="plan__num">$0</span><span class="plan__per">forever</span></p>
+      <a class="btn btn--outline btn--block" href="courses.html">Browse free courses</a>
+      <ul class="plan__list">
+        <li>All free courses</li>
+        <li>Preview lessons in every paid course</li>
+        <li>Community forum</li>
+        <li class="is-off">Mentor feedback</li>
+        <li class="is-off">Certificates</li>
+      </ul>
+    </article>
+
+    <article class="plan plan--pop">
+      <span class="plan__badge hand">most loved!</span>
+      <h2 class="plan__name">Learner</h2>
+      <p class="plan__for">Unlimited courses and real feedback.</p>
+      <p class="plan__price"><span class="plan__num" data-price data-monthly="19" data-yearly="15">$19</span><span class="plan__per" data-per>per month</span></p>
+      <p class="plan__note" data-note>Billed monthly</p>
+      <button class="btn btn--ink btn--block" type="button" data-plan="Learner">Start 7-day free trial</button>
+      <ul class="plan__list">
+        <li>Every course, including new releases</li>
+        <li>Mentor feedback on projects</li>
+        <li>Certificates of completion</li>
+        <li>Offline downloads in the app</li>
+        <li>Live master classes</li>
+      </ul>
+    </article>
+
+    <article class="plan">
+      <h2 class="plan__name">Team</h2>
+      <p class="plan__for">For studios, schools and teams of 3+.</p>
+      <p class="plan__price"><span class="plan__num" data-price data-monthly="39" data-yearly="31">$39</span><span class="plan__per" data-per>per seat / month</span></p>
+      <p class="plan__note" data-note>Billed monthly</p>
+      <button class="btn btn--outline btn--block" type="button" data-plan="Team">Talk to us</button>
+      <ul class="plan__list">
+        <li>Everything in Learner</li>
+        <li>Team progress dashboard</li>
+        <li>Private team courses</li>
+        <li>Invoice billing</li>
+        <li>A named success mentor</li>
+      </ul>
+    </article>
+  </div>
+</section>
+
+<section class="section section--soft" aria-labelledby="faq-title">
+  <div class="container faq">
+    <div class="shead">
+      <p class="note">Good questions</p>
+      <h2 id="faq-title">Pricing FAQ</h2>
+      <p>Anything else? <a class="u" href="contact.html">Send us a note</a>. A real person replies within a day.</p>
+    </div>
+    <div class="acc" data-acc>
+      <div class="acc__item">
+        <h3><button class="acc__btn" type="button" aria-expanded="false" aria-controls="q1" id="q1-b">Can I buy a single course instead?</button></h3>
+        <div class="acc__panel" id="q1" role="region" aria-labelledby="q1-b" hidden><p>Yes. Every course can be bought on its own and is yours for life, including future updates. A plan is cheaper once you take more than two courses a year.</p></div>
+      </div>
+      <div class="acc__item">
+        <h3><button class="acc__btn" type="button" aria-expanded="false" aria-controls="q2" id="q2-b">What happens after the free trial?</button></h3>
+        <div class="acc__panel" id="q2" role="region" aria-labelledby="q2-b" hidden><p>We email you two days before it ends. If you do nothing, the Learner plan starts; cancel before then and you pay nothing.</p></div>
+      </div>
+      <div class="acc__item">
+        <h3><button class="acc__btn" type="button" aria-expanded="false" aria-controls="q3" id="q3-b">Do you offer student or regional discounts?</button></h3>
+        <div class="acc__panel" id="q3" role="region" aria-labelledby="q3-b" hidden><p>Students with a school email get 40% off, and prices adjust automatically in 60 countries to match local purchasing power.</p></div>
+      </div>
+      <div class="acc__item">
+        <h3><button class="acc__btn" type="button" aria-expanded="false" aria-controls="q4" id="q4-b">Can I get a refund?</button></h3>
+        <div class="acc__panel" id="q4" role="region" aria-labelledby="q4-b" hidden><p>Any purchase can be refunded within 30 days, no questions asked. Just reply to your receipt email.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer__cta">
+      <p class="footer__big">Learn something new<br /> <span class="footer__hl">this week.</span></p>
+      <form class="subscribe" data-demo-form novalidate>
+        <label class="footer__label" for="sub-email">Get one free lesson every Friday</label>
+        <div class="subscribe__row">
+          <input id="sub-email" type="email" name="email" placeholder="you@example.com" autocomplete="email" required />
+          <button class="btn btn--orange" type="submit">Subscribe</button>
+        </div>
+        <p class="form-note" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+
+    <div class="footer__grid">
+      <div class="footer__about">
+        <a class="brand brand--light" href="index.html" aria-label="Lernwick — home">
+          <svg class="brand__mark" viewBox="0 0 32 32" aria-hidden="true">
+            <path d="M4 8.5c4-1.9 7.8-1.6 12 .9 4.2-2.5 8-2.8 12-.9v16c-4-1.9-7.8-1.6-12 .9-4.2-2.5-8-2.8-12-.9Z" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round" />
+            <path d="M16 9.4v16" stroke="currentColor" stroke-width="2.4" />
+            <circle cx="25" cy="6" r="3.2" fill="var(--sage)" />
+          </svg>
+          <span class="brand__word">Lernwick</span>
+        </a>
+        <p>Short, practical online courses taught by people who do the work every day.</p>
+      </div>
+      <div>
+        <p class="footer__h">Learn</p>
+        <ul>
+          <li><a href="courses.html">All courses</a></li>
+          <li><a href="course.html">Course detail</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
+          <li><a href="index.html#how">How it works</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="footer__h">School</p>
+        <ul>
+          <li><a href="about.html">About us</a></li>
+          <li><a href="about.html#mentors">Mentors</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="404.html">404 page</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="footer__h">Say hello</p>
+        <address>
+          18 Canal Street, Unit&nbsp;4<br />Manchester M1 3HE<br />
+          <a href="mailto:hello@example.com">hello@example.com</a><br />
+          <a href="tel:+441610000000">+44 161 000 0000</a>
+        </address>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <p>&copy; <span data-year>2026</span> Lernwick. Free template by <a href="https://html.design/">html.design</a>.</p>
+      <p>Photography via <a href="https://www.pexels.com/">Pexels</a></p>
+    </div>
+  </div>
+</footer>
+
+<div class="toast" role="status" aria-live="polite" hidden></div>
+<script src="assets/js/main.js" defer></script>
+</body>
+</html>
